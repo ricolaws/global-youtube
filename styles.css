@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+}
+
+.big-section {
+  background: -webkit-linear-gradient(top left, #e0ff6f, #b9abec);
+  background: -moz-linear-gradient(top left, #e0ff6f, #b9abec);
+  background: linear-gradient(to bottom right, #e0ff6f, #b9abec);
+  height: 1000px;
+  opacity: 96%;
+}
+
+#chart {
+  padding-top: 200px;
+  width: 400px;
+  height: 400px;
+  display: grid;
+
+  opacity: 92%;
+}
+
+#chart * {
+  height: inherit;
+  grid-area: 1 / 1;
+}
+
+.chart-shape {
+  font: 400px/400px serif;
+  text-align: center;
+  color: #d63031;
+  mix-blend-mode: soft-light;
+}
+
+#chart-value {
+  background: conic-gradient(transparent 75%, #00cec9 75%);
+  mix-blend-mode: soft-light;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating1 {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+  font: 400px/400px serif;
+  text-align: center;
+  color: #d63031;
+  mix-blend-mode: difference;
+}
+
+.rotating2 {
+  -webkit-animation: rotating 4s linear infinite;
+  -moz-animation: rotating 4s linear infinite;
+  -ms-animation: rotating 4s linear infinite;
+  -o-animation: rotating 4s linear infinite;
+  animation: rotating 4s linear infinite;
+  font: 400px/400px serif;
+  text-align: center;
+  color: #d63031;
+  mix-blend-mode: difference;
+}
